@@ -13,7 +13,7 @@ cat > aws.json << EOF
     {
     "Action": "UPSERT",
     "ResourceRecordSet": {
-        "Name": "miner1.ryanmeskill.com.",
+        "Name": "MODIFY.YOUR.DOM.",
         "Type": "A",
         "TTL": 300,
         "ResourceRecords": [
@@ -27,4 +27,4 @@ echo "    }" >> aws.json
 echo "  ]" >> aws.json
 echo "}" >> aws.json
 
-aws route53 change-resource-record-sets --hosted-zone-id  Z29ZD1VPYMT0XY --change-batch file://aws.json
+aws route53 change-resource-record-sets --hosted-zone-id  HOSTEDZONEID --change-batch file://aws.json
